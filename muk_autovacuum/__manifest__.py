@@ -23,7 +23,7 @@
 { 
     'name': 'MuK Autovacuum',
     'summary': 'Configure automatic garbage collection',
-    'version': '12.0.3.0.1',
+    'version': '14.0.1.0.0',
     'category': 'Extra Tools',
     'license': 'LGPL-3',
     'author': 'MuK IT',

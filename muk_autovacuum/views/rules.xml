@@ -106,7 +106,7 @@
 				            </group>
 			                <group>
 				                <field name="size_parameter" 
-				                	attrs="{'invisible': [('size_type', '!=', 'parameter')]}"/>
+				                	attrs="{'invisible': [('size_type', '!=', 'parameter')],'required': [('size_type', '=', 'parameter')]}"/>
 				                <field name="size_parameter_value" 
 				                	attrs="{'invisible': [('size_type', '!=', 'parameter')]}"/>
 				                <field name="size" 

@@ -149,8 +149,7 @@ class AutoVacuumRules(models.Model):
         ondelete='cascade',
         states={
             'time': [('invisible', True)], 
-            'size': [('required', True)], 
-            'domain': [('invisible', True)], 
+            'domain': [('invisible', True)],
             'code': [('invisible', True)]})
     
     size_parameter_value = fields.Integer(
