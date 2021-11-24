@@ -44,17 +44,6 @@
 	</field>
 </record>
 
-<record id="view_attachment_tree" model="ir.ui.view">
-	<field name="name">ir_attachment.tree</field>
-    <field name="model">ir.attachment</field>
-    <field name="inherit_id" ref="base.view_attachment_tree"/>
-    <field name="arch" type="xml">
-    	<xpath expr="//field[@name='datas_fname']" position="after">
-        	 <field name="mimetype" />
-        </xpath>
-    </field>
-</record>
-
 <record id="view_attachment_form" model="ir.ui.view">
 	<field name="name">ir_attachment.form</field>
     <field name="model">ir.attachment</field>
