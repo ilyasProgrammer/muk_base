@@ -142,7 +142,8 @@ class IrAttachment(models.Model):
             vals = self._get_datas_inital_vals()
             vals = self._update_datas_vals(vals, attach, bin_data)
             if value and location != 'db':
-                vals['store_fname'] = self._file_write(value, vals['checksum'])
+                pass
+                # vals['store_fname'] = self._file_write(value, vals['checksum'])
             else:
                 vals['db_datas'] = value
             clean_vals = self._get_datas_clean_vals(attach)

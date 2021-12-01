@@ -93,7 +93,6 @@ class ResConfigSettings(models.TransientModel):
         res.update(params.get_branding_settings_params())
         return res
     
-    @api.multi 
     def set_values(self):
         res = super(ResConfigSettings, self).set_values()
         self.env['ir.config_parameter'].set_params({

@@ -105,7 +105,7 @@ class ScssEditor(models.AbstractModel):
                 'type': "binary",
                 'mimetype': "text/scss",
                 'datas': datas,
-                'datas_fname': url.split("/")[-1],
+                'name': url.split("/")[-1],
                 'url': custom_url,
             })
         if not custom_view.exists():

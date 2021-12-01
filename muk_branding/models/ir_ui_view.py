@@ -26,7 +26,6 @@ class View(models.Model):
     
     _inherit = 'ir.ui.view'
 
-    @api.multi
     def read_combined(self, fields=None):
         res = super(View, self).read_combined(fields=fields)
         res['arch'] = self.env['muk_branding.debranding'].debrand(res['arch'])
